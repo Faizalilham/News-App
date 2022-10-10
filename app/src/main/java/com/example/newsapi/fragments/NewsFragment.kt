@@ -45,10 +45,7 @@ class NewsFragment : Fragment() {
             tvTittle.text = tittle
             recyclerNews.showShimmer()
         }
-        val handler = Handler(Looper.getMainLooper())
-        handler.postDelayed({
-            setRecycler()
-        },1000)
+        setRecycler()
 
     }
 
