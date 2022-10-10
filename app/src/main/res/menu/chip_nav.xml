@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/newsFragment"
+        android:title="@string/top_heading"
+        android:icon="@drawable/ic_top_heading"
+        app:cnb_iconColor="@color/red"/>
+    <item
+        android:id="@+id/businessFragment"
+        android:title="@string/business"
+        android:icon="@drawable/ic_business"
+        app:cnb_iconColor="@color/red"/>
+
+    <item
+        android:id="@+id/entertainmentFragment"
+        android:title="@string/entertainment"
+        android:icon="@drawable/ic_entertainment"
+        app:cnb_iconColor="@color/red"/>
+
+    <item
+        android:id="@+id/musicFragment"
+        android:title="@string/music"
+        android:icon="@drawable/ic_music"
+        app:cnb_iconColor="@color/red"/>
+
+    <item
+        android:id="@+id/sportFragment"
+        android:title="@string/sport"
+        android:icon="@drawable/ic_sport"
+        app:cnb_iconColor="@color/red"/>
+
+    <item
+        android:id="@+id/healthFragment"
+        android:title="@string/health"
+        android:icon="@drawable/ic_health"
+        app:cnb_iconColor="@color/red"/>
+
+    <item
+        android:id="@+id/technologyFragment"
+        android:title="@string/technology"
+        android:icon="@drawable/ic_technology"
+        app:cnb_iconColor="@color/red"
+        />
+
+    <item
+        android:id="@+id/searchFragment"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search"
+        app:cnb_iconColor="@color/red"/>
+
+
+</menu>

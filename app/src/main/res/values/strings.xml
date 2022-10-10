@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">NewsApi</string>
+    <string name="top_heading">Top Heading</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hours">Hours</string>
+    <string name="source">Source</string>
+    <string name="tittle">Tittle</string>
+    <string name="date">Date</string>
+    <string name="business">business</string>
+    <string name="entertainment">entertainment</string>
+    <string name="sport">sport</string>
+    <string name="technology">technology</string>
+    <string name="health">health</string>
+    <string name="music">music</string>
+    <string name="news">"Berita Utama"</string>
+    <string name="news_business">Berita Bisnis</string>
+    <string name="news_entertainment">Berita Entertaint</string>
+    <string name="news_sport">Berita Olahraga</string>
+    <string name="news_technology">Berita Teknologi</string>
+    <string name="news_health">Berita Kesehatan</string>
+    <string name="news_music">Berita Musik</string>
+    <string name="search">Search</string>
+    <string name="n">N</string>
+    <string name="koneksi_internetmu_terganggu">Koneksi internetmu terganggu!</string>
+    <string name="desc_internet">Yuk, pastikan internetmu lancar dengan cek ulang paket data, WiFi, atau jaringan di tempatmu.</string>
+    <string name="coba_lagi">Coba Lagi</string>
+    <string name="ke_pengaturan">Ke Pengaturan</string>
+</resources>
