@@ -1,4 +1,4 @@
-package com.example.newsapi.model
+package com.funcode.newsapi.model
 
 data class ListResponse<T>(
     val status : String,

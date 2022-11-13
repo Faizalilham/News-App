@@ -1,31 +1,29 @@
-package com.example.newsapi.fragments
-
-
+package com.funcode.newsapi.fragments
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.newsapi.DetailActivity
-import com.example.newsapi.R
-import com.example.newsapi.Util.url
-import com.example.newsapi.adapter.NewsAdapter
-import com.example.newsapi.databinding.FragmentNewsBinding
-import com.example.newsapi.model.News
-import com.example.newsapi.viewmodel.NewsViewModel
+import com.funcode.newsapi.DetailActivity
+import com.funcode.newsapi.R
+import com.funcode.newsapi.Util
+import com.funcode.newsapi.adapter.NewsAdapter
+import com.funcode.newsapi.databinding.FragmentNewsBinding
+import com.funcode.newsapi.model.News
+import com.funcode.newsapi.viewmodel.NewsViewModel
 
 
-class NewsFragment : Fragment() {
+class EntertainmentFragment : Fragment() {
 
     private lateinit var binding : FragmentNewsBinding
     private lateinit var newsAdapter: NewsAdapter
     private lateinit var newsViewModel: NewsViewModel
+    private var tittle = ""
+    private var category = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,39 +35,40 @@ class NewsFragment : Fragment() {
         return binding.root
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        category = resources.getString(R.string.entertainment)
+        tittle = resources.getString(R.string.news_entertainment)
         binding.apply {
-            val tittle = resources.getString(R.string.news)
             tvTittle.text = tittle
             recyclerNews.showShimmer()
         }
         setRecycler()
-
     }
-
 
     private fun setRecycler(){
         newsAdapter = NewsAdapter(object : NewsAdapter.ClickMe{
             override fun onClick(news: News) {
-               startActivity(Intent(requireActivity(),DetailActivity::class.java).also{
-                   it.putExtra(url,news)
-               })
+                startActivity(Intent(requireActivity(), DetailActivity::class.java).also{
+                    it.putExtra(Util.url,news)
+                })
             }
 
         })
-        newsViewModel.getListNews()
-        newsViewModel.listNewsObserver().observe(requireActivity()){
-            newsAdapter.submitData(it)
-            binding.recyclerNews.hideShimmer()
+        newsAdapter.submitData(mutableListOf())
+        newsViewModel.getNewsCategory(category)
+        newsViewModel.listCategoryNewsObserver().observe(requireActivity()){
+            if(it != null){
+                newsAdapter.submitData(it)
+                binding.recyclerNews.hideShimmer()
+            }
         }
 
         binding.recyclerNews.apply {
             adapter = newsAdapter
-            setHasFixedSize(true)
             layoutManager = LinearLayoutManager(requireActivity())
         }
     }
+
 
 }

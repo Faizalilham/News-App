@@ -1,4 +1,4 @@
-package com.example.newsapi.fragments
+package com.funcode.newsapi.fragments
 
 import android.app.Activity
 import android.content.Intent
@@ -13,13 +13,13 @@ import android.view.inputmethod.EditorInfo
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.newsapi.DetailActivity
-import com.example.newsapi.R
-import com.example.newsapi.Util
-import com.example.newsapi.adapter.NewsAdapter
-import com.example.newsapi.databinding.FragmentSearchBinding
-import com.example.newsapi.model.News
-import com.example.newsapi.viewmodel.NewsViewModel
+import com.funcode.newsapi.DetailActivity
+import com.funcode.newsapi.R
+import com.funcode.newsapi.Util
+import com.funcode.newsapi.adapter.NewsAdapter
+import com.funcode.newsapi.databinding.FragmentSearchBinding
+import com.funcode.newsapi.model.News
+import com.funcode.newsapi.viewmodel.NewsViewModel
 import java.util.*
 
 

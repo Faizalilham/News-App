@@ -1,13 +1,13 @@
-package com.example.newsapi.viewmodel
+package com.funcode.newsapi.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.newsapi.Util
-import com.example.newsapi.api.ApiService
-import com.example.newsapi.model.News
-import com.example.newsapi.BuildConfig;
-import com.example.newsapi.model.ListResponse
+import com.funcode.newsapi.Util
+import com.funcode.newsapi.api.ApiService
+import com.funcode.newsapi.model.News
+import com.funcode.newsapi.BuildConfig;
+import com.funcode.newsapi.model.ListResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

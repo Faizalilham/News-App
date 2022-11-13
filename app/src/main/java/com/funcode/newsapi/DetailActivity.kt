@@ -1,4 +1,4 @@
-package com.example.newsapi
+package com.funcode.newsapi
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -10,10 +10,10 @@ import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
-import com.example.newsapi.Util.setDateFormat
-import com.example.newsapi.Util.url
-import com.example.newsapi.databinding.ActivityDetailBinding
-import com.example.newsapi.model.News
+import com.funcode.newsapi.Util.setDateFormat
+import com.funcode.newsapi.Util.url
+import com.funcode.newsapi.databinding.ActivityDetailBinding
+import com.funcode.newsapi.model.News
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var binding : ActivityDetailBinding

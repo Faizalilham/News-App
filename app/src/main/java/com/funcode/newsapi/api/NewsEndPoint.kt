@@ -1,7 +1,7 @@
-package com.example.newsapi.api
+package com.funcode.newsapi.api
 
-import com.example.newsapi.model.ListResponse
-import com.example.newsapi.model.News
+import com.funcode.newsapi.model.ListResponse
+import com.funcode.newsapi.model.News
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

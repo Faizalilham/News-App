@@ -1,4 +1,4 @@
-package com.example.newsapi
+package com.funcode.newsapi
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,9 +7,9 @@ import android.provider.Settings
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.newsapi.databinding.ActivityMainBinding
-import com.example.newsapi.fragments.*
-import com.example.newsapi.util.NetworkObserver
+import com.funcode.newsapi.databinding.ActivityMainBinding
+import com.funcode.newsapi.fragments.*
+import com.funcode.newsapi.util.NetworkObserver
 
 class MainActivity : AppCompatActivity() {
 

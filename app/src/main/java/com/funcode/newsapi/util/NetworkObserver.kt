@@ -1,4 +1,4 @@
-package com.example.newsapi.util
+package com.funcode.newsapi.util
 
 import android.app.Application
 import android.content.Context

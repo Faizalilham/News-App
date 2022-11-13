@@ -1,4 +1,4 @@
-package com.example.newsapi.adapter
+package com.funcode.newsapi.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,9 +7,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
-import com.example.newsapi.Util.setDateFormat
-import com.example.newsapi.databinding.ListItemBinding
-import com.example.newsapi.model.News
+import com.funcode.newsapi.Util.setDateFormat
+import com.funcode.newsapi.databinding.ListItemBinding
+import com.funcode.newsapi.model.News
 
 class NewsAdapter(private val listener : ClickMe):RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 

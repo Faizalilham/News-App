@@ -1,4 +1,4 @@
-package com.example.newsapi
+package com.funcode.newsapi
 
 import org.junit.Test
 

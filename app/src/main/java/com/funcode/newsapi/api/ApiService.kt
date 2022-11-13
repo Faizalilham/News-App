@@ -1,4 +1,4 @@
-package com.example.newsapi.api
+package com.funcode.newsapi.api
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
